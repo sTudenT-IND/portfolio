@@ -94,3 +94,63 @@ a {
     color: white;
     transform: scale(1.05);
 }
+/* Game Container */
+.game-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1); /* slight transparency */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Input box styling */
+input[type="number"] {
+    padding: 12px;
+    font-size: 18px;
+    width: 80%;
+    max-width: 300px;
+    margin: 20px 0;
+    border: 2px solid #ffffff70;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    text-align: center;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+input[type="number"]::placeholder {
+    color: #7b0386b4;
+}
+
+/* Submit button styling */
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #ff4fd8; /* bright pink */
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #ffb5fa, 0 0 5px #fff;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: black;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #fff, 0 0 10px #ffb5fa;
+}
+
+/* Output text feedback */
+#feedback, #encouragement, #fact {
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 15px;
+    color: #470450;
+    background-color:  rgba(104, 7, 168, 0.2);
+    text-shadow: 0 0 3px #cfc1c1;
+}
