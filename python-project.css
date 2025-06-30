@@ -6,6 +6,7 @@
 
 body {
   background-color: #efedd6;
+  background-image: url("https://media.istockphoto.com/id/1442795856/photo/pink-stacked-cube-dissolving-landscape-medium-high-angle-corner-angle.jpg?s=612x612&w=0&k=20&c=OyjPXssk9Tzc2u_WZp9j2l0SZqQUsjwaym-kTwCDKx0=");
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
@@ -20,7 +21,7 @@ h1 {
 }
 
 .box {
-  background-color: steelblue;
+  background-color: rgb(158, 70, 180);
   color: #fff;
   display: flex;
   align-items: center;
@@ -44,4 +45,52 @@ h1 {
 
 .box h2 {
   font-size: 45px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+   
+
+.Heading{
+  font-family: "Goudy Stout", cursive, sans-serif;
+  font-size: 48px; /* Or whatever size looks best */
+  font-weight: 400; /* Goudy Stout is already very bold */
+  background-color: rgb(236, 213, 241);
+  color: rgb(125, 72, 129);
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* To keep it above other content */
+}
+.display{
+  text-align: center;
+  color:rgb(55, 20, 58);
+  font-size: large;
+  background-color: #efedd6;
+  opacity: 50%;
+  font-family: fantasy;
+}
+.start-btn {
+    display: block;
+    margin: 10px auto; /* Center the button */
+    padding: 10px 20px;
+    text-align: center;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    color: white;
+    background-color: rgb(223, 122, 223);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.start-btn:hover {
+    font-size: x-large;
+    background-color: black;
+    color: white;
+    transform: scale(1.05);
 }
