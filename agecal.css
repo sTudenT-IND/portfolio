@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f6d365, #fda085); /* soft orange-pink */
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+.age-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 450px;
+}
+
+.age-container h1 {
+  color: #ff5722;
+  margin-bottom: 20px;
+}
+
+input[type="date"] {
+  width: 80%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ffab91;
+  border-radius: 10px;
+  outline: none;
+  margin: 15px 0;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #ff7043;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #bf360c;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ffc107;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}

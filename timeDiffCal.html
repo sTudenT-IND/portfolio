@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🌍 Time Difference Calculator</title>
+  <link rel="stylesheet" href="timeDiffCal.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌍 Time Difference Calculator</h1>
+
+    <div class="dropdowns">
+      <label>From Time Zone:</label>
+      <select id="fromZone">
+        <option value="Asia/Kolkata">🇮🇳 India (IST)</option>
+        <option value="America/New_York">🇺🇸 New York (EST)</option>
+        <option value="Europe/London">🇬🇧 London (GMT)</option>
+        <option value="Asia/Tokyo">🇯🇵 Tokyo (JST)</option>
+        <option value="Australia/Sydney">🇦🇺 Sydney (AEDT)</option>
+      </select>
+
+      <label>To Time Zone:</label>
+      <select id="toZone">
+        <option value="Asia/Kolkata">🇮🇳 India (IST)</option>
+        <option value="America/New_York">🇺🇸 New York (EST)</option>
+        <option value="Europe/London">🇬🇧 London (GMT)</option>
+        <option value="Asia/Tokyo">🇯🇵 Tokyo (JST)</option>
+        <option value="Australia/Sydney">🇦🇺 Sydney (AEDT)</option>
+      </select>
+    </div>
+
+    <button onclick="calculateTimeDifference()">Calculate Difference</button>
+
+    <div id="result" class="result">⌛ Select time zones to calculate difference.</div>
+  </div>
+
+  <script src="timeDiffCal.js"></script>
+</body>
+</html>
