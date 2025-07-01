@@ -134,7 +134,7 @@ body{
      border-radius: 80px; /* <-- this creates curved corners */
 }
 .About-box:hover {
-    transform: scale(1.2); /* Slight zoom effect */
+    transform: scale(1.05); /* Slight zoom effect */
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.4); /* Shadow glow */
     opacity: 0.85; /* Slight fade */
     transition: all 0.4s ease-in-out;
@@ -249,4 +249,27 @@ footer{
 
 .any-msg-box{
     text-align: center;
+}
+
+.proglang a {
+  text-decoration: none;
+}
+
+.proglang button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f5066a;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.proglang button:hover {
+    background-color: #f70606;
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4); /* Shadow glow */
+    opacity: 0.95; /* Slight fade */
+    transition: all 0.6s ease-in-out;
 }
