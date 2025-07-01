@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🧠 Flashcard Quiz App</title>
+  <link rel="stylesheet" href="flipCard.css" />
+</head>
+<body>
+  <div class="app-container">
+    <h1>🧠 Flashcard Quiz</h1>
+
+    <div class="flashcard" id="flashcard">
+      <div class="front" id="question">Question will appear here...</div>
+      <div class="back" id="answer">Answer will appear here...</div>
+    </div>
+    <br><br>
+
+    <div class="controls">
+      <button onclick="revealAnswer()">👀 Reveal</button>
+      <button onclick="nextFlashcard()">➡️ Next</button>
+    </div>
+  </div>
+
+  <script src="flipCard.js"></script>
+</body>
+</html>
