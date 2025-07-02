@@ -1,11 +1,11 @@
 const phrases = [
   "PRIYA OJHA",
-  "GIRL",
-  "Developer",
-  "Designer",
-  "Dreamer",
-  "Coder",
-  "AI Enthusiast"
+  "a GIRL",
+  "a Developer",
+  "a Designer",
+  "a Dreamer",
+  "a Coder",
+  "a AI Enthusiast"
 ];
 
 let i = 0; // phrase index
