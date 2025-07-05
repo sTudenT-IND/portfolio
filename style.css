@@ -272,3 +272,80 @@ footer{
     opacity: 0.95; /* Slight fade */
     transition: all 0.6s ease-in-out;
 }
+.Achievements-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: start;
+    overflow: hidden;
+    border-radius: 0.75rem; /* rounded-xl */
+    background-color: #ef4444; /* bg-red-500 */
+    padding: 1rem 2rem; /* px-8 py-4 */
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* Small square at the top-right corner */
+.Achievements-button::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 1rem; /* h-4 */
+    width: 1rem; /* w-4 */
+    border-radius: 0.25rem;
+    background-color: #b91c1c; /* bg-red-700 */
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+}
+
+/* White rotated square inside the red square */
+.Achievements-button::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 1.25rem; /* h-5 */
+    width: 1.25rem; /* w-5 */
+    background-color: white;
+    transform: translate(50%, -50%) rotate(45deg);
+    z-index: 2;
+}
+
+/* Bottom-left background animation layer */
+.Achievements-button .background-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem; /* rounded-2xl */
+    background-color: #dc2626; /* bg-red-600 */
+    transform: translate(-100%, 100%);
+    transition: all 0.5s ease-in-out 0.2s;
+}
+
+/* Text inside the button */
+.Achievements-button .button-text {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    color: white;
+    transition: color 0.2s ease-in-out;
+}
+
+/* Hover Effects */
+.Achievements-button:hover::before {
+    margin-right: -1rem; /* -mr-4 */
+    margin-top: -1rem; /* -mt-4 */
+}
+
+.Achievements-button:hover .background-layer {
+    margin-bottom: 3.5rem; /* mb-14 */
+    transform: translate(0, 0);
+}
+
+.Achievements-button:hover .button-text {
+    color: white;
+}
+
