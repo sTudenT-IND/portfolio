@@ -1,0 +1,180 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+body {
+  margin: 0;
+  padding-top: 80px; /* for fixed navbar */
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+   background-color: #f3c5eb;
+}
+
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #9204bd; 
+  padding: 15px 30px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 15px 15px;
+}
+
+.navbar-brand {
+  color: rgb(218, 157, 207);
+  font-size: 100px;
+  font-weight: bold;
+  font-family: "Brush Script MT";
+  text-decoration: none;
+}
+
+.nav-link {
+  color: rgb(253, 253, 253);
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.nav-link:hover,
+.navbar-brand:hover {
+  color: #c7aac0;
+  transform: scale(1.02);
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Section Styling */
+.section {
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h2 {
+  margin-bottom: 30px;
+  color: #330044;
+  font-weight: 700;
+}
+
+h2:hover {
+  color: #73008f;
+}
+
+/* Form Elements */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"] {
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  background-color: #fafafa;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+input[type="file"]:hover {
+  border-color: #8f00c2;
+}
+
+/* Buttons */
+button,
+.btn {
+  background-color: #8f00c2;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover,
+.btn:hover {
+  background-color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Links */
+a {
+  color: #8f00c2;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+
+/* Card Styles */
+.card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Table Styles */
+.table {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+}
+
+.table-striped tbody tr:hover {
+  background-color: #f0e8ff;
+}
+
+/* Images */
+img {
+  border-radius: 15px;
+  transition: transform 0.4s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  background-color: #000;
+  color: white;
+  border-radius: 20px 20px 0 0;
+}
